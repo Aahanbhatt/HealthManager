@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>797</width>
+    <height>608</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>797</width>
+    <height>608</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>MS PMincho</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Health Kit</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="window_icon.qrc">
+    <normaloff>:/window_icon/health-app-icon.png</normaloff>:/window_icon/health-app-icon.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>2.000000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/back/ARK4.png);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>480</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS PMincho</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:28pt; font-weight:600; color:#959595;&quot;&gt;Welcome to &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>797</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMedical_ID">
+    <property name="title">
+     <string>Medical ID</string>
+    </property>
+    <addaction name="actionUserLogin"/>
+   </widget>
+   <widget class="QMenu" name="menuHealth_Data">
+    <property name="title">
+     <string>Health Data</string>
+    </property>
+    <widget class="QMenu" name="menuSleep">
+     <property name="title">
+      <string>Sleep</string>
+     </property>
+     <addaction name="actionSleep_Analysis"/>
+    </widget>
+    <widget class="QMenu" name="menuVitals">
+     <property name="title">
+      <string>Vitals</string>
+     </property>
+     <addaction name="actionBlood_Pressure"/>
+     <addaction name="actionBody_Temperature"/>
+     <addaction name="actionHeart_Rate"/>
+     <addaction name="actionRespiratory_Rate"/>
+    </widget>
+    <widget class="QMenu" name="menuBody_Measurements">
+     <property name="title">
+      <string>Body Measurements</string>
+     </property>
+     <addaction name="actionBody_Fat_Percentage"/>
+     <addaction name="actionBody_Mass_Index"/>
+     <addaction name="actionHeight"/>
+     <addaction name="actionLean_Body_Mass"/>
+     <addaction name="actionWeight"/>
+    </widget>
+    <widget class="QMenu" name="menuFitness">
+     <property name="title">
+      <string>Fitness</string>
+     </property>
+     <addaction name="actionActive_Energy"/>
+     <addaction name="actionCycling_Distance"/>
+     <addaction name="actionFlights_Climbed"/>
+     <addaction name="actionResting_Energy"/>
+     <addaction name="actionStand_Hours"/>
+     <addaction name="actionSteps"/>
+     <addaction name="actionWalking_Running_Distance"/>
+     <addaction name="actionWorkouts"/>
+    </widget>
+    <widget class="QMenu" name="menuDietary_Intake">
+     <property name="title">
+      <string>Dietary Intake</string>
+     </property>
+     <addaction name="actionCarbohydrates"/>
+     <addaction name="actionCalcium_2"/>
+     <addaction name="actionDietary_Calories"/>
+     <addaction name="actionDietary_Cholestrol"/>
+     <addaction name="actionDietary_Sugar"/>
+     <addaction name="actionFibre"/>
+     <addaction name="actionProtein"/>
+     <addaction name="actionVitamins"/>
+     <addaction name="actionWater"/>
+    </widget>
+    <addaction name="menuBody_Measurements"/>
+    <addaction name="menuFitness"/>
+    <addaction name="menuSleep"/>
+    <addaction name="menuVitals"/>
+    <addaction name="menuDietary_Intake"/>
+   </widget>
+   <addaction name="menuMedical_ID"/>
+   <addaction name="menuHealth_Data"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionBody_Measurements">
+   <property name="text">
+    <string>Body Measurements</string>
+   </property>
+  </action>
+  <action name="actionNew_user">
+   <property name="text">
+    <string>New user</string>
+   </property>
+  </action>
+  <action name="actionSleep_Analysis">
+   <property name="text">
+    <string>Sleep Analysis</string>
+   </property>
+  </action>
+  <action name="actionBlood_Pressure">
+   <property name="text">
+    <string>Blood Pressure</string>
+   </property>
+  </action>
+  <action name="actionBody_Temperature">
+   <property name="text">
+    <string>Body Temperature</string>
+   </property>
+  </action>
+  <action name="actionHeart_Rate">
+   <property name="text">
+    <string>Heart Rate</string>
+   </property>
+  </action>
+  <action name="actionRespiratory_Rate">
+   <property name="text">
+    <string>Respiratory Rate</string>
+   </property>
+  </action>
+  <action name="actionBody_Fat_Percentage">
+   <property name="text">
+    <string>Body Fat Percentage</string>
+   </property>
+  </action>
+  <action name="actionBody_Mass_Index">
+   <property name="text">
+    <string>Body Mass Index</string>
+   </property>
+  </action>
+  <action name="actionHeight">
+   <property name="text">
+    <string>Height</string>
+   </property>
+  </action>
+  <action name="actionLean_Body_Mass">
+   <property name="text">
+    <string>Lean Body Mass</string>
+   </property>
+  </action>
+  <action name="actionWeight">
+   <property name="text">
+    <string>Weight</string>
+   </property>
+  </action>
+  <action name="actionActive_Energy">
+   <property name="text">
+    <string>Active Energy</string>
+   </property>
+  </action>
+  <action name="actionCycling_Distance">
+   <property name="text">
+    <string>Cycling Distance</string>
+   </property>
+  </action>
+  <action name="actionFlights_Climbed">
+   <property name="text">
+    <string>Flights Climbed</string>
+   </property>
+  </action>
+  <action name="actionResting_Energy">
+   <property name="text">
+    <string>Resting Energy</string>
+   </property>
+  </action>
+  <action name="actionStand_Hours">
+   <property name="text">
+    <string>Stand Hours</string>
+   </property>
+  </action>
+  <action name="actionSteps">
+   <property name="text">
+    <string>Steps</string>
+   </property>
+  </action>
+  <action name="actionWalking_Running_Distance">
+   <property name="text">
+    <string>Walking+Running Distance</string>
+   </property>
+  </action>
+  <action name="actionWorkouts">
+   <property name="text">
+    <string>Workouts</string>
+   </property>
+  </action>
+  <action name="actionCalcium">
+   <property name="text">
+    <string>Calcium</string>
+   </property>
+  </action>
+  <action name="actionCarbohydrates">
+   <property name="text">
+    <string>Carbohydrates</string>
+   </property>
+  </action>
+  <action name="actionCalcium_2">
+   <property name="text">
+    <string>Calcium</string>
+   </property>
+  </action>
+  <action name="actionDietary_Calories">
+   <property name="text">
+    <string>Dietary Calories</string>
+   </property>
+  </action>
+  <action name="actionDietary_Cholestrol">
+   <property name="text">
+    <string>Dietary Cholestrol</string>
+   </property>
+  </action>
+  <action name="actionDietary_Sugar">
+   <property name="text">
+    <string>Dietary Sugar</string>
+   </property>
+  </action>
+  <action name="actionFibre">
+   <property name="text">
+    <string>Fibre</string>
+   </property>
+  </action>
+  <action name="actionProtein">
+   <property name="text">
+    <string>Protein</string>
+   </property>
+  </action>
+  <action name="actionVitamins">
+   <property name="text">
+    <string>Vitamins</string>
+   </property>
+  </action>
+  <action name="actionWater">
+   <property name="text">
+    <string>Water</string>
+   </property>
+  </action>
+  <action name="actionUserLogin">
+   <property name="text">
+    <string>UserLogin</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="test.qrc"/>
+  <include location="window_icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>
